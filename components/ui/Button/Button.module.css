@@ -1,0 +1,108 @@
+/* components/ui/Button/Button.module.css */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-weight: 500; /* Refined luxury weight */
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.sm {
+  height: 38px;
+  padding: 0 1.1rem;
+  font-size: var(--text-xs);
+}
+
+.md {
+  height: 46px;
+  padding: 0 1.5rem;
+  font-size: var(--text-sm);
+}
+
+.lg {
+  height: 54px;
+  padding: 0 2rem;
+  font-size: var(--text-base);
+  font-weight: 500;
+}
+
+/* Variants */
+.primary {
+  background: var(--color-accent-blue);
+  color: #ffffff;
+  box-shadow: 0 4px 25px rgba(var(--color-accent-blue-rgb), 0.28);
+}
+
+.primary:hover:not(:disabled) {
+  background: #0071e3;
+  box-shadow: 0 6px 30px rgba(var(--color-accent-blue-rgb), 0.38);
+}
+
+.secondary {
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.secondary:hover:not(:disabled) {
+  background: var(--color-bg-card-hover);
+  border-color: var(--color-border-strong);
+}
+
+.glass {
+  background: var(--color-bg-glass);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  color: var(--color-text-primary);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass:hover:not(:disabled) {
+  background: var(--color-bg-card-hover);
+  border-color: var(--glass-border-hover);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--color-text-primary);
+}
+
+.ghost:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.danger {
+  background: var(--color-accent-red);
+  color: #ffffff;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  line-height: 1;
+}

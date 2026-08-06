@@ -1,0 +1,129 @@
+/* components/sections/HeroSection/HeroSection.module.css */
+.heroSection {
+  padding-top: clamp(8rem, 14vw, 12rem);
+  padding-bottom: clamp(6rem, 10vw, 8rem);
+  text-align: center;
+  position: relative;
+}
+
+.topBadgeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.25rem;
+}
+
+.headline {
+  font-size: var(--text-hero);
+  font-weight: 600; /* Refined elegant weight */
+  letter-spacing: -0.018em;
+  line-height: 1.14;
+  max-width: 1040px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, #0a84ff 0%, #bf5af2 50%, #64d2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  max-width: 860px;
+  margin-inline: auto;
+  line-height: 1.75;
+  margin-bottom: 3.5rem;
+  font-weight: 400;
+}
+
+.ctaGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.statsContainer {
+  margin-top: 2rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1.5rem;
+}
+
+.statCardInner {
+  padding: 1.75rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.statHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.statIconBlue { color: var(--color-accent-blue); }
+.statIconPurple { color: var(--color-accent-purple); }
+.statIconEmerald { color: var(--color-accent-emerald); }
+.statIconAmber { color: var(--color-accent-amber); }
+.statIconCyan { color: var(--color-accent-cyan); }
+
+.statBadge {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+}
+
+.statValue {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+}
+
+.statLabel {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+}
+
+.statDesc {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin-top: auto;
+}
+
+@media (max-width: 640px) {
+  .ctaGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+  .ctaGroup > * {
+    width: 100%;
+  }
+}

@@ -1,0 +1,173 @@
+/* components/sections/ExperienceSection/ExperienceSection.module.css */
+.experienceSection {
+  padding: clamp(6rem, 10vw, 8rem) 0;
+  position: relative;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.title {
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+.expCard {
+  width: 100%;
+}
+
+.expCardInner {
+  padding: clamp(2.25rem, 5vw, 3.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.companyHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.companyIconBox {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 214, 10, 0.08);
+  border: 1px solid rgba(255, 214, 10, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.accentureIcon {
+  color: var(--color-accent-amber);
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.roleTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.roleTitle {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+}
+
+.companyMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  flex-wrap: wrap;
+}
+
+.companyName {
+  font-weight: 600;
+  color: var(--color-accent-amber);
+}
+
+.dotDivider {
+  color: var(--color-text-muted);
+}
+
+.location, .period {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Metrics Dock */
+.metricsDock {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.metricTile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.metricVal {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-accent-amber);
+  line-height: 1.2;
+}
+
+.metricLbl {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-top: 0.25rem;
+}
+
+.metricSub {
+  font-size: 0.725rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-top: 0.15rem;
+}
+
+/* Bullets */
+.bulletsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+}
+
+.bulletIconWrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(var(--color-accent-blue-rgb), 0.1);
+  color: var(--color-accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.bulletText {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}

@@ -1,0 +1,112 @@
+/* components/sections/CertificationsSection/CertificationsSection.module.css */
+.certsSection {
+  padding: clamp(6rem, 10vw, 8rem) 0;
+  position: relative;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.title {
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+.walletGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1.75rem;
+}
+
+.certCard {
+  height: 100%;
+}
+
+.certCardInner {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 1.75rem;
+  min-height: 230px;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.issuerBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+}
+
+.certBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.certTitle {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.35;
+}
+
+.validityRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--text-xs);
+  color: var(--color-accent-emerald);
+  font-weight: 500;
+}
+
+.validIcon {
+  color: var(--color-accent-emerald);
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px dashed var(--color-border);
+  padding-top: 0.85rem;
+  margin-top: auto;
+}
+
+.footerBrand {
+  font-size: 0.725rem;
+  color: var(--color-text-muted);
+}
+
+.passTag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-emerald);
+}

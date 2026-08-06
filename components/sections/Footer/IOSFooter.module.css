@@ -1,0 +1,86 @@
+/* components/sections/Footer/IOSFooter.module.css */
+.footer {
+  padding: 3rem 0 2rem 0;
+  background: var(--color-bg-subtle);
+  border-top: 1px solid var(--color-border);
+  position: relative;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brandIcon {
+  color: var(--color-accent-blue);
+}
+
+.brandTitle {
+  font-size: var(--text-base);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+.brandSub {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.footerNav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.footerNav a {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footerNav a:hover {
+  color: var(--color-text-primary);
+}
+
+.divider {
+  height: 1px;
+  background: var(--color-border);
+  width: 100%;
+}
+
+.bottomRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.builtWith {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.heartIcon {
+  color: var(--color-accent-red);
+}

@@ -1,0 +1,162 @@
+/* components/sections/AppsSection/AppsSection.module.css */
+.appsSection {
+  padding: clamp(6rem, 10vw, 8rem) 0;
+  position: relative;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.title {
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: 1.75rem;
+}
+
+.appTileInner {
+  padding: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.appIconContainer {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px; /* iOS App Icon Squircle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+.appIconBlue { color: #ffffff; }
+.appIconPurple { color: #ffffff; }
+.appIconRed { color: #ffffff; }
+.appIconEmerald { color: #ffffff; }
+.appIconAmber { color: #ffffff; }
+.appIconCyan { color: #64d2ff; }
+
+.appInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.appTitle {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+}
+
+.appCategory {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+.appBadge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--color-accent-blue);
+  margin-top: 0.35rem;
+}
+
+/* Modal Content Styling */
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modalHeroBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modalText {
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+  line-height: 1.7;
+}
+
+.modalBullets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.bulletIcon {
+  color: var(--color-accent-blue);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.modalFooterActions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.certsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.certItem {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.certName {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.certMeta {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-top: 0.2rem;
+}
